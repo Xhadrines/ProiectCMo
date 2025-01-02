@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/mainView"
+        android:layout_width="350dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:contentDescription="Aici vei introduce mesajele."
+        android:ems="10"
+        android:hint="Scrie mesajul aici..."
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/mainView"
+        app:layout_constraintStart_toStartOf="@+id/mainView" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSend"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainView"
+        app:layout_constraintEnd_toEndOf="@+id/mainView"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSettings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/mainView"
+        app:layout_constraintTop_toTopOf="@+id/mainView"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    <TextView
+        android:id="@+id/textViewChat"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="50dp"
+        android:hint="Conversatia ta va aparea aici."
+        android:contentDescription="Aici va aparea raspunsul si mesajul tau."
+        app:layout_constraintEnd_toEndOf="@+id/mainView"
+        app:layout_constraintStart_toStartOf="@+id/mainView"
+        app:layout_constraintTop_toTopOf="@+id/mainView" />
+
+    <TextView
+        android:id="@+id/textViewAlexAI"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="AlexAI"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@+id/mainView"
+        app:layout_constraintTop_toTopOf="@+id/mainView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
